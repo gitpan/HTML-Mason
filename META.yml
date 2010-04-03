@@ -9,7 +9,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.36
 dynamic_config: 1
-generated_by: 'Module::Build version 0.36'
+generated_by: 'Module::Build version 0.3603'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,7 +24,7 @@ provides:
     version: 0.09
   HTML::Mason:
     file: lib/HTML/Mason.pm
-    version: 1.44
+    version: 1.45
   HTML::Mason::Apache::Request:
     file: lib/HTML/Mason/Apache/Request.pm
   HTML::Mason::ApacheHandler:
@@ -105,7 +105,6 @@ provides:
   Tie::Handle::Mason:
     file: lib/HTML/Mason/Request.pm
 requires:
-  Apache::Request: 1.05
   CGI: 2.46
   Cache::Cache: 1
   Class::Container: 0.07
@@ -116,7 +115,6 @@ requires:
   Params::Validate: 0.7
   Scalar::Util: 1.01
   Test::Deep: 0
-  mod_perl: 1.24
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.44
+version: 1.45

@@ -311,7 +311,7 @@ sub _initialize {
                     #
                     {
                         no strict 'refs';
-                        unless (defined(%{$plugin . "::"})) {
+                        unless (keys %{$plugin . "::"}) {
                             eval "use $plugin;";
                             die $@ if $@;
                         }
@@ -1451,15 +1451,6 @@ sub request_args
 # For backward compatibility:
 *top_args = \&request_args;
 *top_comp = \&request_comp;
-
-# deprecated in 1.1x
-sub time
-{
-    my ($self) = @_;
-    my $time = $self->interp->current_time;
-    $time = time() if $time eq 'real';
-    return $time;
-}
 
 #
 # Subroutine called by every component while in debug mode, convenient
