@@ -865,7 +865,7 @@ method|HTML::Mason::Interp/item_set_escape> for more details.
 
 =item * Type in httpd.conf:  regex
 
-=item * Default:             qr/Subroutine .* redefined/i
+=item * Default:             qr(?^i:Subroutine .* redefined)
 
 =item * Belongs to:          C<HTML::Mason::Interp>
 

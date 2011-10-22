@@ -1,0 +1,217 @@
+{
+   "abstract" : "High-performance, dynamic web site authoring system",
+   "author" : [
+      "Jonathan Swartz <swartz@pobox.com>, Dave Rolsky <autarch@urth.org>, Ken Williams <ken@mathforum.org>, John Williams <williams@tni.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "HTML-Mason",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.26",
+            "Test" : 0,
+            "Test::Builder" : 0
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.26"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "CGI" : "2.46",
+            "Cache::Cache" : "1",
+            "Class::Container" : "0.07",
+            "Exception::Class" : "1.15",
+            "File::Spec" : "0.8",
+            "HTML::Entities" : 0,
+            "Log::Any" : "0.08",
+            "Params::Validate" : "0.7",
+            "Scalar::Util" : "1.01",
+            "Test::Deep" : 0
+         }
+      }
+   },
+   "provides" : {
+      "Apache::Mason" : {
+         "file" : "lib/Apache/Mason.pm",
+         "version" : "0.4"
+      },
+      "Bundle::HTML::Mason" : {
+         "file" : "lib/Bundle/HTML/Mason.pm",
+         "version" : "0.09"
+      },
+      "HTML::Mason" : {
+         "file" : "lib/HTML/Mason.pm",
+         "version" : "1.47"
+      },
+      "HTML::Mason::Apache::Request" : {
+         "file" : "lib/HTML/Mason/Apache/Request.pm",
+         "version" : 0
+      },
+      "HTML::Mason::ApacheHandler" : {
+         "file" : "lib/HTML/Mason/ApacheHandler.pm",
+         "version" : "1.69"
+      },
+      "HTML::Mason::CGIHandler" : {
+         "file" : "lib/HTML/Mason/CGIHandler.pm",
+         "version" : "1.00"
+      },
+      "HTML::Mason::Cache::BaseCache" : {
+         "file" : "lib/HTML/Mason/Cache/BaseCache.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Compiler" : {
+         "file" : "lib/HTML/Mason/Compiler.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Compiler::ToObject" : {
+         "file" : "lib/HTML/Mason/Compiler/ToObject.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Component" : {
+         "file" : "lib/HTML/Mason/Component.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Component::FileBased" : {
+         "file" : "lib/HTML/Mason/Component/FileBased.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Component::Subcomponent" : {
+         "file" : "lib/HTML/Mason/Component/Subcomponent.pm",
+         "version" : 0
+      },
+      "HTML::Mason::ComponentSource" : {
+         "file" : "lib/HTML/Mason/ComponentSource.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Escapes" : {
+         "file" : "lib/HTML/Mason/Escapes.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Exception" : {
+         "file" : "lib/HTML/Mason/Exceptions.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Exception::Compilation" : {
+         "file" : "lib/HTML/Mason/Exceptions.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Exception::Syntax" : {
+         "file" : "lib/HTML/Mason/Exceptions.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Exceptions" : {
+         "file" : "lib/HTML/Mason/Exceptions.pm",
+         "version" : "1.43"
+      },
+      "HTML::Mason::FakeApache" : {
+         "file" : "lib/HTML/Mason/FakeApache.pm",
+         "version" : 0
+      },
+      "HTML::Mason::FakeTable" : {
+         "file" : "lib/HTML/Mason/FakeApache.pm",
+         "version" : 0
+      },
+      "HTML::Mason::FakeTableHash" : {
+         "file" : "lib/HTML/Mason/FakeApache.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Handler" : {
+         "file" : "lib/HTML/Mason/Handler.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Interp" : {
+         "file" : "lib/HTML/Mason/Interp.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Lexer" : {
+         "file" : "lib/HTML/Mason/Lexer.pm",
+         "version" : 0
+      },
+      "HTML::Mason::MethodMaker" : {
+         "file" : "lib/HTML/Mason/MethodMaker.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin" : {
+         "file" : "lib/HTML/Mason/Plugin.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin::Context" : {
+         "file" : "lib/HTML/Mason/Plugin/Context.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin::Context::EndComponent" : {
+         "file" : "lib/HTML/Mason/Plugin/Context.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin::Context::EndRequest" : {
+         "file" : "lib/HTML/Mason/Plugin/Context.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin::Context::StartComponent" : {
+         "file" : "lib/HTML/Mason/Plugin/Context.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Plugin::Context::StartRequest" : {
+         "file" : "lib/HTML/Mason/Plugin/Context.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Request" : {
+         "file" : "lib/HTML/Mason/Request.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Request::ApacheHandler" : {
+         "file" : "lib/HTML/Mason/ApacheHandler.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Request::CGI" : {
+         "file" : "lib/HTML/Mason/CGIHandler.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Resolver" : {
+         "file" : "lib/HTML/Mason/Resolver.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Resolver::File" : {
+         "file" : "lib/HTML/Mason/Resolver/File.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Resolver::Null" : {
+         "file" : "lib/HTML/Mason/Resolver/Null.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Tests" : {
+         "file" : "lib/HTML/Mason/Tests.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Tools" : {
+         "file" : "lib/HTML/Mason/Tools.pm",
+         "version" : 0
+      },
+      "HTML::Mason::Utils" : {
+         "file" : "lib/HTML/Mason/Utils.pm",
+         "version" : 0
+      },
+      "Tie::Handle::Mason" : {
+         "file" : "lib/HTML/Mason/Request.pm",
+         "version" : 0
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "1.47"
+}
