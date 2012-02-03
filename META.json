@@ -4,7 +4,7 @@
       "Jonathan Swartz <swartz@pobox.com>, Dave Rolsky <autarch@urth.org>, Ken Williams <ken@mathforum.org>, John Williams <williams@tni.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.113640",
    "license" : [
       "perl_5"
    ],
@@ -52,7 +52,7 @@
       },
       "HTML::Mason" : {
          "file" : "lib/HTML/Mason.pm",
-         "version" : "1.47"
+         "version" : "1.48"
       },
       "HTML::Mason::Apache::Request" : {
          "file" : "lib/HTML/Mason/Apache/Request.pm",
@@ -213,5 +213,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "1.47"
+   "version" : "1.48"
 }

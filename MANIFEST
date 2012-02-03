@@ -47,11 +47,8 @@ lib/HTML/Mason/Tests.pm
 lib/HTML/Mason/Tools.pm
 lib/HTML/Mason/Utils.pm
 LICENSE
-Makefile.PL
 MANIFEST			This list of files
 MANIFEST.SKIP
-META.json
-META.yml
 README
 samples/dump-request
 samples/README
@@ -112,6 +109,9 @@ t/run_tests
 t/single_test.pl
 t/taint.comp
 UPGRADE
+Makefile.PL
+META.yml
+META.json
 htdocs/Admin.html                        
 htdocs/ApacheHandler.html                
 htdocs/Cache/BaseCache.html              
