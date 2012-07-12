@@ -8,6 +8,9 @@ use warnings;
 BEGIN { eval "package Apache" }
 
 package HTML::Mason::FakeApache;
+BEGIN {
+  $HTML::Mason::FakeApache::VERSION = '1.50';
+}
 @HTML::Mason::FakeApache::ISA = qw(Apache);
 # Analogous to Apache request object $r (but not an actual Apache subclass)
 # In the future we'll probably want to switch this to Apache::Fake or similar
@@ -314,6 +317,9 @@ sub params {
 
 ###########################################################
 package HTML::Mason::FakeTable;
+BEGIN {
+  $HTML::Mason::FakeTable::VERSION = '1.50';
+}
 # Analogous to Apache::Table.
 use strict;
 use warnings;
@@ -368,6 +374,9 @@ sub do {
 
 ###########################################################
 package HTML::Mason::FakeTableHash;
+BEGIN {
+  $HTML::Mason::FakeTableHash::VERSION = '1.50';
+}
 # Used by HTML::Mason::FakeTable.
 use strict;
 use warnings;
@@ -468,11 +477,17 @@ sub _map_header_key_to_cgi_key {
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::FakeApache - An Apache object emulator for use with Mason
+
+=head1 VERSION
+
+version 1.50
 
 =head1 SYNOPSIS
 
@@ -482,4 +497,37 @@ See L<HTML::Mason::CGIHandler|HTML::Mason::CGIHandler>.
 
 This class's API is documented in L<HTML::Mason::CGIHandler|HTML::Mason::CGIHandler>.
 
+=head1 SEE ALSO
+
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
+
+__END__
+

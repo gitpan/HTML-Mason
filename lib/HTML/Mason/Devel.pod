@@ -1,6 +1,14 @@
+
+__END__
+=pod
+
 =head1 NAME
 
 HTML::Mason::Devel - Mason Developer's Manual
+
+=head1 VERSION
+
+version 1.50
 
 =head1 DESCRIPTION
 
@@ -2232,14 +2240,34 @@ Modules which work as source filters, such as C<Switch.pm>, will only
 work when you are using object files.  This is because of how source
 filters are implemented, and cannot be changed by the Mason authors.
 
-=head1 AUTHORS
-
-Jonathan Swartz <swartz@pobox.com>, Dave Rolsky <autarch@urth.org>, Ken Williams <ken@mathforum.org>
-
 =head1 SEE ALSO
 
-L<HTML::Mason|HTML::Mason>,
-L<HTML::Mason::Admin|HTML::Mason::Admin>,
-L<HTML::Mason::Request|HTML::Mason::Request>
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+

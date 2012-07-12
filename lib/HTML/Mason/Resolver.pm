@@ -3,6 +3,9 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Resolver;
+BEGIN {
+  $HTML::Mason::Resolver::VERSION = '1.50';
+}
 
 use strict;
 use warnings;
@@ -37,11 +40,17 @@ sub _virtual
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::Resolver - Component path resolver base class
+
+=head1 VERSION
+
+version 1.50
 
 =head1 SYNOPSIS
 
@@ -123,6 +132,35 @@ L<HTML::Mason::ApacheHandler|HTML::Mason::ApacheHandler>.
 
 =head1 SEE ALSO
 
-L<HTML::Mason|HTML::Mason>
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

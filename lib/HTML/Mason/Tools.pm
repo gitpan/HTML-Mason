@@ -9,6 +9,9 @@
 #
 
 package HTML::Mason::Tools;
+BEGIN {
+  $HTML::Mason::Tools::VERSION = '1.50';
+}
 
 use strict;
 use warnings;
@@ -270,11 +273,17 @@ sub checksum {
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::Tools - Function library used internally in Mason
+
+=head1 VERSION
+
+version 1.50
 
 =head1 DESCRIPTION
 
@@ -367,4 +376,37 @@ Computes a simple checksum of a string. Used for Compiler::object_id.
 
 =back
 
+=head1 SEE ALSO
+
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
+
+__END__
+

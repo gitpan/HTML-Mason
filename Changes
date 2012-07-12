@@ -1,9 +1,20 @@
 Revision history for HTML::Mason.
 
-An HTML version of this file, complete with links to documentation, is
-available at http://www.masonhq.com/code/history.html.
-
 ** denotes an incompatible change
+
+1.50 Jul 11, 2012
+
+    [ DISTRIBUTION ]
+
+    - Switch to Dist::Zilla
+    - Eliminate HTML docs from distribution, available on web
+    - Move live Apache tests to author-only
+
+1.49 Feb 27, 2012
+
+    [ DOCS ]
+
+    - Fixed misspellings in docs. RT #74676. Reported by Salvatore Bonaccorso.
 
 1.48 Feb 3, 2012
 
@@ -22,7 +33,7 @@ available at http://www.masonhq.com/code/history.html.
 
 1.46 Aug 1, 2011
 
- [ DOCS ]
+    [ DOCS ]
 
     - Mention Mason 2 in documentation
 

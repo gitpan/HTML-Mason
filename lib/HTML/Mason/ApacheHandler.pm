@@ -1037,7 +1037,7 @@ sub _set_mason_req_out_method
             }
 
             # Call $r->print (using the real Apache method, not our
-            # overriden method).
+            # overridden method).
             $r->$final_output_method( grep {defined} @_ );
             $r->rflush;
         };
@@ -1082,11 +1082,17 @@ EOF
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::ApacheHandler - Mason/mod_perl interface
+
+=head1 VERSION
+
+version 1.50
 
 =head1 SYNOPSIS
 
@@ -1226,8 +1232,35 @@ value of the L<args_method|HTML::Mason::Params/args_method> parameter.
 
 =head1 SEE ALSO
 
-L<HTML::Mason|HTML::Mason>,
-L<HTML::Mason::Admin|HTML::Mason::Admin>,
-L<HTML::Mason::Interp|HTML::Mason::Interp>
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

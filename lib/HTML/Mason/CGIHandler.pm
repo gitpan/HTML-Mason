@@ -223,11 +223,17 @@ sub redirect {
 }
 
 1;
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::CGIHandler - Use Mason in a CGI environment
+
+=head1 VERSION
+
+version 1.50
 
 =head1 SYNOPSIS
 
@@ -599,8 +605,35 @@ of its values will be in the table any longer.
 
 =head1 SEE ALSO
 
-L<HTML::Mason|HTML::Mason>,
-L<HTML::Mason::Admin|HTML::Mason::Admin>,
-L<HTML::Mason::ApacheHandler|HTML::Mason::ApacheHandler>
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+

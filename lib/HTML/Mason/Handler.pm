@@ -9,6 +9,9 @@
 # 
 
 package HTML::Mason::Handler;
+BEGIN {
+  $HTML::Mason::Handler::VERSION = '1.50';
+}
 
 use strict;
 use warnings;

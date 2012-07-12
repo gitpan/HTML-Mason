@@ -31,6 +31,9 @@
 #
 
 package HTML::Mason::Request;
+BEGIN {
+  $HTML::Mason::Request::VERSION = '1.50';
+}
 
 use strict;
 use warnings;
@@ -1548,6 +1551,9 @@ sub log
 }
 
 package Tie::Handle::Mason;
+BEGIN {
+  $Tie::Handle::Mason::VERSION = '1.50';
+}
 
 sub TIEHANDLE
 {
@@ -1579,11 +1585,17 @@ sub PRINTF
 
 1;
 
-__END__
+
+
+=pod
 
 =head1 NAME
 
 HTML::Mason::Request - Mason Request Class
+
+=head1 VERSION
+
+version 1.50
 
 =head1 SYNOPSIS
 
@@ -1680,7 +1692,7 @@ To use the CHI C<FastMmap> driver by default:
     data_cache_api      => 'CHI',
     data_cache_defaults => {driver => 'FastMmap'},
 
-These settings are overriden by options given to particular
+These settings are overridden by options given to particular
 C<$m-E<gt>cache> calls.
 
 =item dhandler_name
@@ -1894,7 +1906,7 @@ defaults to C<FileCache> in most cases, or C<MemoryCache> if the
 interpreter has no data directory, and must be a backend subclass of
 C<Cache::Cache>. The prefix "Cache::" need not be included.  See the
 C<Cache::Cache> package for a full list of backend subclasses.
- 
+
 Beyond that, I<cache_options> may include any valid options to the new() method of the
 cache class. e.g. for C<FileCache>, valid options include C<default_expires_in> and
 C<cache_depth>.
@@ -2532,14 +2544,37 @@ exceptions, like this:
 
 =back
 
-=head1 AUTHORS
-
-Jonathan Swartz <swartz@pobox.com>, Dave Rolsky <autarch@urth.org>, Ken Williams <ken@mathforum.org>
-
 =head1 SEE ALSO
 
-L<HTML::Mason|HTML::Mason>,
-L<HTML::Mason::Devel|HTML::Mason::Devel>,
-L<HTML::Mason::Component|HTML::Mason::Component>
+L<Mason|Mason>
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Jonathan Swartz <swartz@pobox.com>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Ken Williams <ken@mathforum.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Jonathan Swartz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+
+__END__
+
