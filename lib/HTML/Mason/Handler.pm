@@ -9,8 +9,8 @@
 # 
 
 package HTML::Mason::Handler;
-BEGIN {
-  $HTML::Mason::Handler::VERSION = '1.50';
+{
+  $HTML::Mason::Handler::VERSION = '1.51';
 }
 
 use strict;

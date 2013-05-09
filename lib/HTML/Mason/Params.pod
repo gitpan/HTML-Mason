@@ -6,8 +6,8 @@
 # Edit that script instead of this document.
 #
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -16,7 +16,7 @@ HTML::Mason::Params - Mason configuration parameters
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 DESCRIPTION
 
@@ -1309,4 +1309,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

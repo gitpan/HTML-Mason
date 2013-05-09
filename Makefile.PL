@@ -9,38 +9,38 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'High-performance, dynamic web site authoring system',
-  'AUTHOR' => 'Jonathan Swartz <swartz@pobox.com>, Dave Rolsky <autarch@urth.org>, Ken Williams <ken@mathforum.org>',
-  'BUILD_REQUIRES' => {
-    'Test::Deep' => '0'
+  "ABSTRACT" => "High-performance, dynamic web site authoring system",
+  "AUTHOR" => "Jonathan Swartz <swartz\@pobox.com>, Dave Rolsky <autarch\@urth.org>, Ken Williams <ken\@mathforum.org>",
+  "BUILD_REQUIRES" => {
+    "Test::Deep" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'HTML-Mason',
-  'EXE_FILES' => [
-    'bin/convert0.6.pl',
-    'bin/convert0.6.README',
-    'bin/convert0.8.pl',
-    'bin/convert0.8.README',
-    'bin/mason.pl'
+  "DISTNAME" => "HTML-Mason",
+  "EXE_FILES" => [
+    "bin/convert0.6.pl",
+    "bin/convert0.6.README",
+    "bin/convert0.8.pl",
+    "bin/convert0.8.README",
+    "bin/mason.pl"
   ],
-  'LICENSE' => 'perl',
-  'NAME' => 'HTML::Mason',
-  'PREREQ_PM' => {
-    'CGI' => '2.46',
-    'Cache::Cache' => '1.00',
-    'Class::Container' => '0.07',
-    'Exception::Class' => '1.15',
-    'File::Spec' => '0.8',
-    'HTML::Entities' => '0',
-    'Log::Any' => '0.08',
-    'Params::Validate' => '0.70',
-    'Scalar::Util' => '1.01'
+  "LICENSE" => "perl",
+  "NAME" => "HTML::Mason",
+  "PREREQ_PM" => {
+    "CGI" => "2.46",
+    "Cache::Cache" => "1.00",
+    "Class::Container" => "0.07",
+    "Exception::Class" => "1.15",
+    "File::Spec" => "0.8",
+    "HTML::Entities" => 0,
+    "Log::Any" => "0.08",
+    "Params::Validate" => "0.70",
+    "Scalar::Util" => "1.01"
   },
-  'VERSION' => '1.50',
-  'test' => {
-    'TESTS' => 't/*.t t/author-live/*.t'
+  "VERSION" => "1.51",
+  "test" => {
+    "TESTS" => "t/*.t t/author-live/*.t"
   }
 );
 

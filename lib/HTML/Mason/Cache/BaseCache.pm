@@ -3,8 +3,8 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Cache::BaseCache;
-BEGIN {
-  $HTML::Mason::Cache::BaseCache::VERSION = '1.50';
+{
+  $HTML::Mason::Cache::BaseCache::VERSION = '1.51';
 }
 use strict;
 use warnings;
@@ -79,7 +79,7 @@ sub expire_if
 
 1;
 
-
+__END__
 
 =pod
 
@@ -89,7 +89,7 @@ HTML::Mason::Cache::BaseCache - Base cache object
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 DESCRIPTION
 
@@ -207,7 +207,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

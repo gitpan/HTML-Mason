@@ -4,7 +4,7 @@ die "The Parser module is no longer a part of HTML::Mason.  Please see ".
 
 1;  # heh
 
-
+__END__
 
 =pod
 
@@ -14,7 +14,7 @@ HTML::Mason::Parser - Old module for compiling components
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 DESCRIPTION
 
@@ -53,7 +53,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

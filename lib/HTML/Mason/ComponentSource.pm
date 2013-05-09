@@ -3,8 +3,8 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::ComponentSource;
-BEGIN {
-  $HTML::Mason::ComponentSource::VERSION = '1.50';
+{
+  $HTML::Mason::ComponentSource::VERSION = '1.51';
 }
 
 use strict;
@@ -85,7 +85,7 @@ sub object_code
 
 1;
 
-
+__END__
 
 =pod
 
@@ -95,7 +95,7 @@ HTML::Mason::ComponentSource - represents information about an component
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -240,7 +240,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

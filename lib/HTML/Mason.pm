@@ -1,14 +1,12 @@
 package HTML::Mason;
-BEGIN {
-  $HTML::Mason::VERSION = '1.50';
+{
+  $HTML::Mason::VERSION = '1.51';
 }
 # Copyright (c) 1998-2005 by Jonathan Swartz. All rights reserved.
 # This program is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.
 
 use 5.006;
-
-$HTML::Mason::VERSION = '1.49';
 
 use HTML::Mason::Interp;
 
@@ -19,7 +17,7 @@ sub version
 
 1;
 
-
+__END__
 
 =pod
 
@@ -29,7 +27,7 @@ Mason - High-performance, dynamic web site authoring system
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -240,7 +238,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

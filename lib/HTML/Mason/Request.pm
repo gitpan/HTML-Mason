@@ -31,8 +31,8 @@
 #
 
 package HTML::Mason::Request;
-BEGIN {
-  $HTML::Mason::Request::VERSION = '1.50';
+{
+  $HTML::Mason::Request::VERSION = '1.51';
 }
 
 use strict;
@@ -1551,8 +1551,8 @@ sub log
 }
 
 package Tie::Handle::Mason;
-BEGIN {
-  $Tie::Handle::Mason::VERSION = '1.50';
+{
+  $Tie::Handle::Mason::VERSION = '1.51';
 }
 
 sub TIEHANDLE
@@ -1585,7 +1585,7 @@ sub PRINTF
 
 1;
 
-
+__END__
 
 =pod
 
@@ -1595,7 +1595,7 @@ HTML::Mason::Request - Mason Request Class
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -2574,7 +2574,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

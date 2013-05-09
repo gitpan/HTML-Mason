@@ -7,8 +7,8 @@
 #
 
 package HTML::Mason::Escapes;
-BEGIN {
-  $HTML::Mason::Escapes::VERSION = '1.50';
+{
+  $HTML::Mason::Escapes::VERSION = '1.51';
 }
 
 use strict;
@@ -45,7 +45,7 @@ sub url_escape
 
 1;
 
-
+__END__
 
 =pod
 
@@ -55,7 +55,7 @@ HTML::Mason::Escapes - Functions to escape text for Mason
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 DESCRIPTION
 
@@ -135,7 +135,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

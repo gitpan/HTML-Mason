@@ -3,8 +3,8 @@
 # it under the same terms as Perl itself.
 
 package HTML::Mason::Compiler::ToObject;
-BEGIN {
-  $HTML::Mason::Compiler::ToObject::VERSION = '1.50';
+{
+  $HTML::Mason::Compiler::ToObject::VERSION = '1.51';
 }
 
 use strict;
@@ -633,7 +633,7 @@ sub _declared_args
 
 1;
 
-
+__END__
 
 =pod
 
@@ -643,7 +643,7 @@ HTML::Mason::Compiler::ToObject - A Compiler subclass that generates Mason objec
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -777,7 +777,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

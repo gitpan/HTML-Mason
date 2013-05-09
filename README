@@ -2,7 +2,7 @@ NAME
     Mason - High-performance, dynamic web site authoring system
 
 VERSION
-    version 1.50
+    version 1.51
 
 SYNOPSIS
         PerlModule HTML::Mason::ApacheHandler

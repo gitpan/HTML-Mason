@@ -8,8 +8,8 @@ use warnings;
 BEGIN { eval "package Apache" }
 
 package HTML::Mason::FakeApache;
-BEGIN {
-  $HTML::Mason::FakeApache::VERSION = '1.50';
+{
+  $HTML::Mason::FakeApache::VERSION = '1.51';
 }
 @HTML::Mason::FakeApache::ISA = qw(Apache);
 # Analogous to Apache request object $r (but not an actual Apache subclass)
@@ -317,8 +317,8 @@ sub params {
 
 ###########################################################
 package HTML::Mason::FakeTable;
-BEGIN {
-  $HTML::Mason::FakeTable::VERSION = '1.50';
+{
+  $HTML::Mason::FakeTable::VERSION = '1.51';
 }
 # Analogous to Apache::Table.
 use strict;
@@ -374,8 +374,8 @@ sub do {
 
 ###########################################################
 package HTML::Mason::FakeTableHash;
-BEGIN {
-  $HTML::Mason::FakeTableHash::VERSION = '1.50';
+{
+  $HTML::Mason::FakeTableHash::VERSION = '1.51';
 }
 # Used by HTML::Mason::FakeTable.
 use strict;
@@ -477,7 +477,7 @@ sub _map_header_key_to_cgi_key {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -487,7 +487,7 @@ HTML::Mason::FakeApache - An Apache object emulator for use with Mason
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -527,7 +527,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

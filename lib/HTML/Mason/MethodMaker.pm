@@ -3,8 +3,8 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::MethodMaker;
-BEGIN {
-  $HTML::Mason::MethodMaker::VERSION = '1.50';
+{
+  $HTML::Mason::MethodMaker::VERSION = '1.51';
 }
 
 use strict;
@@ -111,8 +111,8 @@ sub import
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -121,7 +121,7 @@ HTML::Mason::MethodMaker - Used to create simple get & get/set methods in other 
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -208,4 +208,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

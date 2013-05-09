@@ -3,8 +3,8 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Resolver;
-BEGIN {
-  $HTML::Mason::Resolver::VERSION = '1.50';
+{
+  $HTML::Mason::Resolver::VERSION = '1.51';
 }
 
 use strict;
@@ -40,7 +40,7 @@ sub _virtual
 
 1;
 
-
+__END__
 
 =pod
 
@@ -50,7 +50,7 @@ HTML::Mason::Resolver - Component path resolver base class
 
 =head1 VERSION
 
-version 1.50
+version 1.51
 
 =head1 SYNOPSIS
 
@@ -160,7 +160,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-
-__END__
-

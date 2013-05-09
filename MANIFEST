@@ -35,6 +35,7 @@ lib/HTML/Mason/ComponentSource.pm
 lib/HTML/Mason/Devel.pod
 lib/HTML/Mason/Escapes.pm
 lib/HTML/Mason/Exceptions.pm
+lib/HTML/Mason/FAQ.pod
 lib/HTML/Mason/FakeApache.pm
 lib/HTML/Mason/Handler.pm
 lib/HTML/Mason/Interp.pm
