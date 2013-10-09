@@ -1,6 +1,5 @@
-#!/usr/bin/perl -w
-
 use strict;
+use warnings;
 
 use Config;
 use HTML::Mason::Tests;
@@ -1076,9 +1075,37 @@ EOF
 
 #------------------------------------------------------------
 
-        $group->add_test( name => 'warnings',
-                          description => 'Make sure that warnings _are_ generated for other bad use of uninit',
+        $group->add_test( name => 'no warnings',
+                          description => "Make sure that warnings _aren't_ generated for other bad use of uninit",
                           component => <<'EOF',
+% my $x;
+x is <% $x + 2 %>
+EOF
+                          expect => <<'EOF',
+x is 2
+EOF
+                        );
+
+#------------------------------------------------------------
+
+        $group->add_test( name => 'warnings_without_autoflush',
+                          description => "Make sure that warnings _aren't_ generated for other bad use of uninit when enable_autoflush is off",
+                          interp_params => { enable_autoflush => 0 },
+                          component => <<'EOF',
+% my $x;
+x is <% $x + 2 %>
+EOF
+                          expect => <<'EOF',
+x is 2
+EOF
+                        );
+
+#------------------------------------------------------------
+
+        $group->add_test( name => 'warnings_need_explicit_enabling',
+                          description => "Make sure that warnings _are_ generated for other bad use of uninit",
+                          component => <<'EOF',
+% use warnings;
 % my $x;
 x is <% $x + 2 %>
 EOF
@@ -1090,15 +1117,46 @@ EOF
 
 #------------------------------------------------------------
 
-        $group->add_test( name => 'warnings_without_autoflush',
-                          description => 'Make sure that warnings _are_ generated for other bad use of uninit when enable_autoflush is off',
+        $group->add_test( name => 'warnings_need_explicit_enabling_without_autoflush',
+                          description => "Make sure that warnings _are_ generated for other bad use of uninit when enable_autoflush is off",
                           interp_params => { enable_autoflush => 0 },
                           component => <<'EOF',
+% use warnings;
 % my $x;
 x is <% $x + 2 %>
 EOF
                           expect => <<'EOF',
 x is 2
+EOF
+                          expect_warnings => qr/Use of uninitialized value.+in addition/,
+                        );
+
+#------------------------------------------------------------
+
+        $group->add_test( name => 'warnings_do_not_need_explicit_enabling_on_use_warnings',
+                          interp_params => { use_warnings => 1 },
+                          description => "Make sure that warnings _are_ generated on use_warnings for other bad use of uninit",
+                          component => <<'EOF',
+% my $x;
+use_warnings is <% $x + 2 %>
+EOF
+                          expect => <<'EOF',
+use_warnings is 2
+EOF
+                          expect_warnings => qr/Use of uninitialized value.+in addition/,
+                        );
+
+#------------------------------------------------------------
+
+        $group->add_test( name => 'warnings_do_not_need_explicit_enabling_without_autoflush_on_use_warnings',
+                          description => "Make sure that warnings _are_ generated on use_warnings for other bad use of uninit when enable_autoflush is off",
+                          interp_params => { enable_autoflush => 0, use_warnings => 1 },
+                          component => <<'EOF',
+% my $x;
+use_warnings is <% $x + 2 %>
+EOF
+                          expect => <<'EOF',
+use_warnings is 2
 EOF
                           expect_warnings => qr/Use of uninitialized value.+in addition/,
                         );
@@ -1126,6 +1184,21 @@ EOF
 EOF
                           expect_error => qr/content ending tag but no beginning tag/
                         );
+
+#------------------------------------------------------------
+
+    $group->add_test( name => 'non_stringifying_escape',
+                      description => 'stringify after escapes, not before',
+                      component => <<'EOF',
+% $m->interp->set_escape( blort => sub { ${$_[0]} = ${$_[0]}->[0] if ref ${$_[0]} } );
+Works for <% 'strings' | blort %>
+Works for <% ['refs']  | blort %>
+EOF
+                      expect => <<'EOF',
+Works for strings
+Works for refs
+EOF
+                    );
 
 #------------------------------------------------------------
 

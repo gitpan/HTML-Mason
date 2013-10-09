@@ -6,7 +6,7 @@
 
 package HTML::Mason::Apache::Request;
 {
-  $HTML::Mason::Apache::Request::VERSION = '1.51';
+  $HTML::Mason::Apache::Request::VERSION = '1.52';
 }
 
 use strict;

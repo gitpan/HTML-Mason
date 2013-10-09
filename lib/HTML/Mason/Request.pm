@@ -32,7 +32,7 @@
 
 package HTML::Mason::Request;
 {
-  $HTML::Mason::Request::VERSION = '1.51';
+  $HTML::Mason::Request::VERSION = '1.52';
 }
 
 use strict;
@@ -346,7 +346,7 @@ sub _initialize {
 sub use_dhandlers
 {
     my $self = shift;
-    return defined $self->{dhandler_name} and length $self->{dhandler_name};
+    return (defined $self->{dhandler_name} and length $self->{dhandler_name});
 }
 
 sub alter_superclass
@@ -1552,7 +1552,7 @@ sub log
 
 package Tie::Handle::Mason;
 {
-  $Tie::Handle::Mason::VERSION = '1.51';
+  $Tie::Handle::Mason::VERSION = '1.52';
 }
 
 sub TIEHANDLE
@@ -1595,7 +1595,7 @@ HTML::Mason::Request - Mason Request Class
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

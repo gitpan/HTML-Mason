@@ -9,7 +9,7 @@ BEGIN { eval "package Apache" }
 
 package HTML::Mason::FakeApache;
 {
-  $HTML::Mason::FakeApache::VERSION = '1.51';
+  $HTML::Mason::FakeApache::VERSION = '1.52';
 }
 @HTML::Mason::FakeApache::ISA = qw(Apache);
 # Analogous to Apache request object $r (but not an actual Apache subclass)
@@ -318,7 +318,7 @@ sub params {
 ###########################################################
 package HTML::Mason::FakeTable;
 {
-  $HTML::Mason::FakeTable::VERSION = '1.51';
+  $HTML::Mason::FakeTable::VERSION = '1.52';
 }
 # Analogous to Apache::Table.
 use strict;
@@ -375,7 +375,7 @@ sub do {
 ###########################################################
 package HTML::Mason::FakeTableHash;
 {
-  $HTML::Mason::FakeTableHash::VERSION = '1.51';
+  $HTML::Mason::FakeTableHash::VERSION = '1.52';
 }
 # Used by HTML::Mason::FakeTable.
 use strict;
@@ -487,7 +487,7 @@ HTML::Mason::FakeApache - An Apache object emulator for use with Mason
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

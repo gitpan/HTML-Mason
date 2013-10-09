@@ -4,7 +4,7 @@
 
 package HTML::Mason::ComponentSource;
 {
-  $HTML::Mason::ComponentSource::VERSION = '1.51';
+  $HTML::Mason::ComponentSource::VERSION = '1.52';
 }
 
 use strict;
@@ -95,7 +95,7 @@ HTML::Mason::ComponentSource - represents information about an component
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

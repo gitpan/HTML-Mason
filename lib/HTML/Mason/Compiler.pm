@@ -4,7 +4,7 @@
 
 package HTML::Mason::Compiler;
 {
-  $HTML::Mason::Compiler::VERSION = '1.51';
+  $HTML::Mason::Compiler::VERSION = '1.52';
 }
 
 use strict;
@@ -120,10 +120,10 @@ sub compute_object_id
           grep { $_ ne 'container' } keys %$spec );
 
     my @vals = ('HTML::Mason::VERSION', $HTML::Mason::VERSION);
-    foreach my $k ( @id_keys ) {
+    foreach my $k ( sort @id_keys ) {
         push @vals, $k, $self->{$k};
     }
-    my $dumped_vals = Data::Dumper->new(\@vals)->Indent(0)->Dump;
+    my $dumped_vals = Data::Dumper->new(\@vals)->Indent(0)->Sortkeys(1)->Dump;
     $self->{object_id} = checksum($dumped_vals);
 }
 
@@ -140,7 +140,7 @@ sub add_allowed_globals
         param_error "add_allowed_globals: bad parameters '@bad', must begin with one of \$, \@, %\n";
     }
 
-    $self->{allow_globals} = [ keys %{ { map { $_ => 1 } @globals, @{ $self->{allow_globals} } } } ];
+    $self->{allow_globals} = [ sort keys %{ { map { $_ => 1 } @globals, @{ $self->{allow_globals} } } } ];
     return @{ $self->{allow_globals} };
 }
 
@@ -495,7 +495,8 @@ sub substitution
               grep { $_ ne 'n' } @flags
             );
 
-        $text = "\$m->interp->apply_escapes( (join '', ($text)), $flags )" if $flags;
+        $text = "(map {; \$m->interp->apply_escapes(\$_, $flags) } ($text))"
+          if $flags;
     }
 
     my $code;
@@ -720,7 +721,7 @@ HTML::Mason::Compiler - Compile Mason component source
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

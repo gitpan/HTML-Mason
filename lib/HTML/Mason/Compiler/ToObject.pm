@@ -4,7 +4,7 @@
 
 package HTML::Mason::Compiler::ToObject;
 {
-  $HTML::Mason::Compiler::ToObject::VERSION = '1.51';
+  $HTML::Mason::Compiler::ToObject::VERSION = '1.52';
 }
 
 use strict;
@@ -49,6 +49,10 @@ BEGIN
          { parse => 'boolean', type => SCALAR, default => 1,
            descr => "Whether to turn on Perl's 'strict' pragma in components" },
 
+         use_warnings =>
+         { parse => 'boolean', type => SCALAR, default => 0,
+           descr => "Whether to turn on Perl's 'warnings' pragma in components" },
+
          define_args_hash =>
          { parse => 'string', type => SCALAR, default => 'auto',
            regex => qr/^(?:always|auto|never)$/,
@@ -70,6 +74,7 @@ use HTML::Mason::MethodMaker
                         preamble
                         subcomp_class
                         use_strict
+                        use_warnings
                         )
                     ],
       );
@@ -303,6 +308,7 @@ sub _make_main_header
 
     return join '', ( "package $pkg;\n",
                       $self->use_strict ? "use strict;\n" : "no strict;\n",
+                      $self->use_warnings ? "use warnings;\n" : "",
                       sprintf( "use vars qw(\%s);\n",
                                join ' ', '$m', $self->allow_globals ),
                       $self->_blocks('once'),
@@ -643,7 +649,7 @@ HTML::Mason::Compiler::ToObject - A Compiler subclass that generates Mason objec
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 
@@ -698,6 +704,11 @@ C<$m> in postamble code.
 
 True or false, default is true. Indicates whether or not a given
 component should C<use strict>.
+
+=item use_warnings
+
+True or false, default is false. Indicates whether or not a given
+component should C<use warnings>.
 
 =item named_component_subs
 

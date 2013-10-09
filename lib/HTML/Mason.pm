@@ -1,6 +1,6 @@
 package HTML::Mason;
 {
-  $HTML::Mason::VERSION = '1.51';
+  $HTML::Mason::VERSION = '1.52';
 }
 # Copyright (c) 1998-2005 by Jonathan Swartz. All rights reserved.
 # This program is free software; you can redistribute it and/or modify it
@@ -27,7 +27,7 @@ Mason - High-performance, dynamic web site authoring system
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

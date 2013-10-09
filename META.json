@@ -6,7 +6,7 @@
       "Ken Williams <ken@mathforum.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300034, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "perl_5"
    ],
@@ -60,6 +60,6 @@
          "web" : "https://github.com/jonswar/perl-HTML-Mason"
       }
    },
-   "version" : "1.51"
+   "version" : "1.52"
 }
 

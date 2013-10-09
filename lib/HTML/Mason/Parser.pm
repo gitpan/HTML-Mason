@@ -14,7 +14,7 @@ HTML::Mason::Parser - Old module for compiling components
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 DESCRIPTION
 

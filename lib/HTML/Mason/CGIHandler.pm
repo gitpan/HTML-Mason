@@ -234,7 +234,7 @@ HTML::Mason::CGIHandler - Use Mason in a CGI environment
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

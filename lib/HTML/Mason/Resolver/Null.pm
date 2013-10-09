@@ -4,7 +4,7 @@
 
 package HTML::Mason::Resolver::Null;
 {
-  $HTML::Mason::Resolver::Null::VERSION = '1.51';
+  $HTML::Mason::Resolver::Null::VERSION = '1.52';
 }
 
 use strict;
@@ -41,7 +41,7 @@ HTML::Mason::Resolver::Null - a do-nothing resolver
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 

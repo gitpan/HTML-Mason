@@ -6,7 +6,7 @@
 
 package HTML::Mason::Interp;
 {
-  $HTML::Mason::Interp::VERSION = '1.51';
+  $HTML::Mason::Interp::VERSION = '1.52';
 }
 
 use strict;
@@ -865,7 +865,7 @@ sub object_file {
 sub use_autohandlers
 {
     my $self = shift;
-    return defined $self->{autohandler_name} and length $self->{autohandler_name};
+    return (defined $self->{autohandler_name} and length $self->{autohandler_name});
 }
 
 # Generate HTML that describes Interp's current status.
@@ -1035,7 +1035,7 @@ HTML::Mason::Interp - Mason Component Interpreter
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 
