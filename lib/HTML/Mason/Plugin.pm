@@ -1,6 +1,6 @@
 package HTML::Mason::Plugin;
 {
-  $HTML::Mason::Plugin::VERSION = '1.52';
+  $HTML::Mason::Plugin::VERSION = '1.53';
 }
 
 use strict;
@@ -43,7 +43,7 @@ HTML::Mason::Plugin - Plugin Base class for Mason
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 DESCRIPTION
 

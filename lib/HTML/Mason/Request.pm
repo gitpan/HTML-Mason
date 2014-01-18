@@ -32,7 +32,7 @@
 
 package HTML::Mason::Request;
 {
-  $HTML::Mason::Request::VERSION = '1.52';
+  $HTML::Mason::Request::VERSION = '1.53';
 }
 
 use strict;
@@ -1552,7 +1552,7 @@ sub log
 
 package Tie::Handle::Mason;
 {
-  $Tie::Handle::Mason::VERSION = '1.52';
+  $Tie::Handle::Mason::VERSION = '1.53';
 }
 
 sub TIEHANDLE
@@ -1595,7 +1595,7 @@ HTML::Mason::Request - Mason Request Class
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 

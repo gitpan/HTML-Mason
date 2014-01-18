@@ -1096,7 +1096,7 @@ HTML::Mason::ApacheHandler - Mason/mod_perl interface
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 

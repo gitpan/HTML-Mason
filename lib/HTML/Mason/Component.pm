@@ -4,7 +4,7 @@
 
 package HTML::Mason::Component;
 {
-  $HTML::Mason::Component::VERSION = '1.52';
+  $HTML::Mason::Component::VERSION = '1.53';
 }
 
 use strict;
@@ -400,7 +400,7 @@ HTML::Mason::Component - Mason Component Class
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 

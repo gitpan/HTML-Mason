@@ -10,7 +10,7 @@
 
 package HTML::Mason::Handler;
 {
-  $HTML::Mason::Handler::VERSION = '1.52';
+  $HTML::Mason::Handler::VERSION = '1.53';
 }
 
 use strict;

@@ -4,7 +4,7 @@
 
 package HTML::Mason::Cache::BaseCache;
 {
-  $HTML::Mason::Cache::BaseCache::VERSION = '1.52';
+  $HTML::Mason::Cache::BaseCache::VERSION = '1.53';
 }
 use strict;
 use warnings;
@@ -89,7 +89,7 @@ HTML::Mason::Cache::BaseCache - Base cache object
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 DESCRIPTION
 

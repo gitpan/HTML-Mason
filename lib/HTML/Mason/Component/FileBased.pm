@@ -4,7 +4,7 @@
 
 package HTML::Mason::Component::FileBased;
 {
-  $HTML::Mason::Component::FileBased::VERSION = '1.52';
+  $HTML::Mason::Component::FileBased::VERSION = '1.53';
 }
 
 use strict;
@@ -63,7 +63,7 @@ HTML::Mason::Component::FileBased - Mason File-Based Component Class
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 DESCRIPTION
 

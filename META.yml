@@ -33,4 +33,4 @@ requires:
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=HTML::Mason
   repository: git://github.com/jonswar/perl-HTML-Mason.git
-version: 1.52
+version: 1.53

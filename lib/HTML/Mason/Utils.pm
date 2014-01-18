@@ -9,7 +9,7 @@
 
 package HTML::Mason::Utils;
 {
-  $HTML::Mason::Utils::VERSION = '1.52';
+  $HTML::Mason::Utils::VERSION = '1.53';
 }
 
 use HTML::Mason::Tools qw(compress_path);
@@ -65,7 +65,7 @@ HTML::Mason::Utils - Publicly available functions useful outside of Mason
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 DESCRIPTION
 

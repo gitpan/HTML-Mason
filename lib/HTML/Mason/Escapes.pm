@@ -8,7 +8,7 @@
 
 package HTML::Mason::Escapes;
 {
-  $HTML::Mason::Escapes::VERSION = '1.52';
+  $HTML::Mason::Escapes::VERSION = '1.53';
 }
 
 use strict;
@@ -55,7 +55,7 @@ HTML::Mason::Escapes - Functions to escape text for Mason
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 DESCRIPTION
 

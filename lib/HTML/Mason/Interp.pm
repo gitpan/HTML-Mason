@@ -6,7 +6,7 @@
 
 package HTML::Mason::Interp;
 {
-  $HTML::Mason::Interp::VERSION = '1.52';
+  $HTML::Mason::Interp::VERSION = '1.53';
 }
 
 use strict;
@@ -1035,7 +1035,7 @@ HTML::Mason::Interp - Mason Component Interpreter
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 

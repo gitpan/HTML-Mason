@@ -1,6 +1,6 @@
 package HTML::Mason::Tests;
 {
-  $HTML::Mason::Tests::VERSION = '1.52';
+  $HTML::Mason::Tests::VERSION = '1.53';
 }
 
 use strict;
@@ -689,7 +689,7 @@ HTML::Mason::Tests - Test harness for testing Mason
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 

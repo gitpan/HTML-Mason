@@ -4,7 +4,7 @@
 
 package HTML::Mason::Resolver::File;
 {
-  $HTML::Mason::Resolver::File::VERSION = '1.52';
+  $HTML::Mason::Resolver::File::VERSION = '1.53';
 }
 
 use strict;
@@ -113,7 +113,7 @@ HTML::Mason::Resolver::File - Component path resolver for file-based components
 
 =head1 VERSION
 
-version 1.52
+version 1.53
 
 =head1 SYNOPSIS
 
