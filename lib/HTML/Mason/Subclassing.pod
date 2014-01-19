@@ -10,7 +10,7 @@ HTML::Mason::Subclassing - Documentation on Subclassing Internal Mason classes
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 DESCRIPTION
 

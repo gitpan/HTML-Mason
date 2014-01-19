@@ -451,7 +451,7 @@ HTML::Mason::Exceptions - Exception objects thrown by Mason
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 SYNOPSIS
 

@@ -10,7 +10,7 @@
 
 package HTML::Mason::Tools;
 {
-  $HTML::Mason::Tools::VERSION = '1.53';
+  $HTML::Mason::Tools::VERSION = '1.54';
 }
 
 use strict;
@@ -283,7 +283,7 @@ HTML::Mason::Tools - Function library used internally in Mason
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 DESCRIPTION
 

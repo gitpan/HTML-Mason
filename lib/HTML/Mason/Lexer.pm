@@ -4,7 +4,7 @@
 
 package HTML::Mason::Lexer;
 {
-  $HTML::Mason::Lexer::VERSION = '1.53';
+  $HTML::Mason::Lexer::VERSION = '1.54';
 }
 
 use strict;
@@ -585,7 +585,7 @@ HTML::Mason::Lexer - Generates events based on component source lexing
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 SYNOPSIS
 

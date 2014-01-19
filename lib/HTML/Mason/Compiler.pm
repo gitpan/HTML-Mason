@@ -4,7 +4,7 @@
 
 package HTML::Mason::Compiler;
 {
-  $HTML::Mason::Compiler::VERSION = '1.53';
+  $HTML::Mason::Compiler::VERSION = '1.54';
 }
 
 use strict;
@@ -721,7 +721,7 @@ HTML::Mason::Compiler - Compile Mason component source
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 SYNOPSIS
 

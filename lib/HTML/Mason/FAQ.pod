@@ -10,7 +10,7 @@ HTML::Mason::FAQ - Frequently asked questions
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 AUTOHANDLERS, METHODS, ATTRIBUTES, INHERITANCE
 

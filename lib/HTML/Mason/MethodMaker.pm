@@ -4,7 +4,7 @@
 
 package HTML::Mason::MethodMaker;
 {
-  $HTML::Mason::MethodMaker::VERSION = '1.53';
+  $HTML::Mason::MethodMaker::VERSION = '1.54';
 }
 
 use strict;
@@ -121,7 +121,7 @@ HTML::Mason::MethodMaker - Used to create simple get & get/set methods in other 
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 SYNOPSIS
 

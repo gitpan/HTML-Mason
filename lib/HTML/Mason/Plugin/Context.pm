@@ -1,6 +1,6 @@
 package HTML::Mason::Plugin::Context;
 {
-  $HTML::Mason::Plugin::Context::VERSION = '1.53';
+  $HTML::Mason::Plugin::Context::VERSION = '1.54';
 }
 use strict;
 use warnings;
@@ -9,7 +9,7 @@ use warnings;
 
 package HTML::Mason::Plugin::Context::StartRequest;
 {
-  $HTML::Mason::Plugin::Context::StartRequest::VERSION = '1.53';
+  $HTML::Mason::Plugin::Context::StartRequest::VERSION = '1.54';
 }
 use base qw(HTML::Mason::Plugin::Context);
 
@@ -26,7 +26,7 @@ sub args      {
 
 package HTML::Mason::Plugin::Context::EndRequest;
 {
-  $HTML::Mason::Plugin::Context::EndRequest::VERSION = '1.53';
+  $HTML::Mason::Plugin::Context::EndRequest::VERSION = '1.54';
 }
 use base qw(HTML::Mason::Plugin::Context);
 
@@ -47,7 +47,7 @@ sub error     { $_[0]->[5] }
 
 package HTML::Mason::Plugin::Context::StartComponent;
 {
-  $HTML::Mason::Plugin::Context::StartComponent::VERSION = '1.53';
+  $HTML::Mason::Plugin::Context::StartComponent::VERSION = '1.54';
 }
 use base qw(HTML::Mason::Plugin::Context);
 
@@ -59,7 +59,7 @@ sub args      { $_[0]->[2] }
 
 package HTML::Mason::Plugin::Context::EndComponent;
 {
-  $HTML::Mason::Plugin::Context::EndComponent::VERSION = '1.53';
+  $HTML::Mason::Plugin::Context::EndComponent::VERSION = '1.54';
 }
 use base qw(HTML::Mason::Plugin::Context);
 
@@ -84,7 +84,7 @@ HTML::Mason::Plugin::Context - encapsulates arguments passed to plugin methods
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 DESCRIPTION
 

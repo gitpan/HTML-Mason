@@ -4,7 +4,7 @@
 
 package HTML::Mason::Compiler::ToObject;
 {
-  $HTML::Mason::Compiler::ToObject::VERSION = '1.53';
+  $HTML::Mason::Compiler::ToObject::VERSION = '1.54';
 }
 
 use strict;
@@ -649,7 +649,7 @@ HTML::Mason::Compiler::ToObject - A Compiler subclass that generates Mason objec
 
 =head1 VERSION
 
-version 1.53
+version 1.54
 
 =head1 SYNOPSIS
 
