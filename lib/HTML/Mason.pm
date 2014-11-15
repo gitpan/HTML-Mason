@@ -1,10 +1,10 @@
 package HTML::Mason;
-# git description: 146831c
+# git description: v1.55-2-g3c9481a
 
 # Copyright (c) 1998-2005 by Jonathan Swartz. All rights reserved.
 # This program is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.
-$HTML::Mason::VERSION = '1.55';
+$HTML::Mason::VERSION = '1.56';
 use 5.006;
 
 use HTML::Mason::Interp;
@@ -24,7 +24,7 @@ __END__
 
 =head1 VERSION
 
-version 1.55
+version 1.56
 
 =head1 SYNOPSIS
 

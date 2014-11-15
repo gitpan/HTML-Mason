@@ -23,121 +23,6 @@ no_index:
     - eg
   file:
     - lib/HTML/Mason/Tests.pm
-provides:
-  HTML::Mason:
-    file: lib/HTML/Mason.pm
-    version: '1.55'
-  HTML::Mason::Apache::Request:
-    file: lib/HTML/Mason/Apache/Request.pm
-    version: '1.55'
-  HTML::Mason::ApacheHandler:
-    file: lib/HTML/Mason/ApacheHandler.pm
-    version: '1.55'
-  HTML::Mason::CGIHandler:
-    file: lib/HTML/Mason/CGIHandler.pm
-    version: '1.55'
-  HTML::Mason::Cache::BaseCache:
-    file: lib/HTML/Mason/Cache/BaseCache.pm
-    version: '1.55'
-  HTML::Mason::Compiler:
-    file: lib/HTML/Mason/Compiler.pm
-    version: '1.55'
-  HTML::Mason::Compiler::ToObject:
-    file: lib/HTML/Mason/Compiler/ToObject.pm
-    version: '1.55'
-  HTML::Mason::Component:
-    file: lib/HTML/Mason/Component.pm
-    version: '1.55'
-  HTML::Mason::Component::FileBased:
-    file: lib/HTML/Mason/Component/FileBased.pm
-    version: '1.55'
-  HTML::Mason::Component::Subcomponent:
-    file: lib/HTML/Mason/Component/Subcomponent.pm
-    version: '1.55'
-  HTML::Mason::ComponentSource:
-    file: lib/HTML/Mason/ComponentSource.pm
-    version: '1.55'
-  HTML::Mason::Escapes:
-    file: lib/HTML/Mason/Escapes.pm
-    version: '1.55'
-  HTML::Mason::Exception:
-    file: lib/HTML/Mason/Exceptions.pm
-    version: '1.55'
-  HTML::Mason::Exception::Compilation:
-    file: lib/HTML/Mason/Exceptions.pm
-    version: '1.55'
-  HTML::Mason::Exception::Syntax:
-    file: lib/HTML/Mason/Exceptions.pm
-    version: '1.55'
-  HTML::Mason::Exceptions:
-    file: lib/HTML/Mason/Exceptions.pm
-    version: '1.55'
-  HTML::Mason::FakeApache:
-    file: lib/HTML/Mason/FakeApache.pm
-    version: '1.55'
-  HTML::Mason::FakeTable:
-    file: lib/HTML/Mason/FakeApache.pm
-    version: '1.55'
-  HTML::Mason::FakeTableHash:
-    file: lib/HTML/Mason/FakeApache.pm
-    version: '1.55'
-  HTML::Mason::Handler:
-    file: lib/HTML/Mason/Handler.pm
-    version: '1.55'
-  HTML::Mason::Interp:
-    file: lib/HTML/Mason/Interp.pm
-    version: '1.55'
-  HTML::Mason::Lexer:
-    file: lib/HTML/Mason/Lexer.pm
-    version: '1.55'
-  HTML::Mason::MethodMaker:
-    file: lib/HTML/Mason/MethodMaker.pm
-    version: '1.55'
-  HTML::Mason::Plugin:
-    file: lib/HTML/Mason/Plugin.pm
-    version: '1.55'
-  HTML::Mason::Plugin::Context:
-    file: lib/HTML/Mason/Plugin/Context.pm
-    version: '1.55'
-  HTML::Mason::Plugin::Context::EndComponent:
-    file: lib/HTML/Mason/Plugin/Context.pm
-    version: '1.55'
-  HTML::Mason::Plugin::Context::EndRequest:
-    file: lib/HTML/Mason/Plugin/Context.pm
-    version: '1.55'
-  HTML::Mason::Plugin::Context::StartComponent:
-    file: lib/HTML/Mason/Plugin/Context.pm
-    version: '1.55'
-  HTML::Mason::Plugin::Context::StartRequest:
-    file: lib/HTML/Mason/Plugin/Context.pm
-    version: '1.55'
-  HTML::Mason::Request:
-    file: lib/HTML/Mason/Request.pm
-    version: '1.55'
-  HTML::Mason::Request::ApacheHandler:
-    file: lib/HTML/Mason/ApacheHandler.pm
-    version: '1.55'
-  HTML::Mason::Request::CGI:
-    file: lib/HTML/Mason/CGIHandler.pm
-    version: '1.55'
-  HTML::Mason::Resolver:
-    file: lib/HTML/Mason/Resolver.pm
-    version: '1.55'
-  HTML::Mason::Resolver::File:
-    file: lib/HTML/Mason/Resolver/File.pm
-    version: '1.55'
-  HTML::Mason::Resolver::Null:
-    file: lib/HTML/Mason/Resolver/Null.pm
-    version: '1.55'
-  HTML::Mason::Tools:
-    file: lib/HTML/Mason/Tools.pm
-    version: '1.55'
-  HTML::Mason::Utils:
-    file: lib/HTML/Mason/Utils.pm
-    version: '1.55'
-  Tie::Handle::Mason:
-    file: lib/HTML/Mason/Request.pm
-    version: '1.55'
 requires:
   CGI: '2.46'
   Cache::Cache: '1.00'
@@ -152,7 +37,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=HTML-Mason
   homepage: http://metacpan.org/release/HTML-Mason
   repository: git://github.com/autarch/HTML-Mason.git
-version: '1.55'
+version: '1.56'
 x_Dist_Zilla:
   perl:
     version: '5.016003'
@@ -204,21 +89,6 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::MetaResources
       name: '@DROLSKY/MetaResources'
       version: '5.025'
-    -
-      class: Dist::Zilla::Plugin::MetaProvides::Package
-      config:
-        Dist::Zilla::Plugin::MetaProvides::Package:
-          finder_objects:
-            -
-              class: Dist::Zilla::Plugin::FinderCode
-              name: '@DROLSKY/MetaProvides::Package/AUTOVIV/:InstallModulesPM'
-              version: '5.025'
-        Dist::Zilla::Role::MetaProvider::Provider:
-          inherit_missing: '1'
-          inherit_version: '1'
-          meta_noindex: '1'
-      name: '@DROLSKY/MetaProvides::Package'
-      version: '2.001002'
     -
       class: Dist::Zilla::Plugin::NextRelease
       name: '@DROLSKY/NextRelease'
@@ -474,7 +344,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Git::Tag:
           branch: ~
           signed: 0
-          tag: v1.55
+          tag: v1.56
           tag_format: v%v
           tag_message: v%v
           time_zone: local
@@ -544,10 +414,6 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::FinderCode
       name: ':NoFiles'
-      version: '5.025'
-    -
-      class: Dist::Zilla::Plugin::FinderCode
-      name: '@DROLSKY/MetaProvides::Package/AUTOVIV/:InstallModulesPM'
       version: '5.025'
   zilla:
     class: Dist::Zilla::Dist::Builder

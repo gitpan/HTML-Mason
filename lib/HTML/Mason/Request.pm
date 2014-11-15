@@ -31,7 +31,7 @@
 #
 
 package HTML::Mason::Request;
-$HTML::Mason::Request::VERSION = '1.55';
+$HTML::Mason::Request::VERSION = '1.56';
 use strict;
 use warnings;
 
@@ -1548,7 +1548,7 @@ sub log
 }
 
 package Tie::Handle::Mason;
-$Tie::Handle::Mason::VERSION = '1.55';
+$Tie::Handle::Mason::VERSION = '1.56';
 sub TIEHANDLE
 {
     my $class = shift;
