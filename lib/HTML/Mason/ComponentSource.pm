@@ -3,10 +3,7 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::ComponentSource;
-{
-  $HTML::Mason::ComponentSource::VERSION = '1.54';
-}
-
+$HTML::Mason::ComponentSource::VERSION = '1.55';
 use strict;
 use warnings;
 use File::Basename;
@@ -62,7 +59,7 @@ sub comp_source_ref
 
     unless ( defined $source )
     {
-	error "source callback returned no source for $self->{friendly_name} component";
+        error "source callback returned no source for $self->{friendly_name} component";
     }
 
     my $sourceref = ref($source) ? $source : \$source;
@@ -77,9 +74,9 @@ sub object_code
     my %p = validate( @_, { compiler => { isa => 'HTML::Mason::Compiler' } } );
 
     return $p{compiler}->compile( comp_source => $self->comp_source,
-				  name => $self->friendly_name,
+                                  name => $self->friendly_name,
                                   comp_path => $self->comp_path,
-				  comp_class => $self->comp_class,
+                                  comp_class => $self->comp_class,
                                 );
 }
 
@@ -87,15 +84,9 @@ sub object_code
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::ComponentSource - represents information about an component
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -122,7 +113,7 @@ The component's component path.
 
 =item * last_modified
 
-This is the last modificatoin time for the component, in Unix time
+This is the last modification time for the component, in Unix time
 (seconds since the epoch).
 
 =item * comp_id
@@ -209,34 +200,5 @@ component.
 L<HTML::Mason|HTML::Mason>,
 L<HTML::Mason::Admin|HTML::Mason::Admin>,
 L<HTML::Mason::Component|HTML::Mason::Component>
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

@@ -5,10 +5,7 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Interp;
-{
-  $HTML::Mason::Interp::VERSION = '1.54';
-}
-
+$HTML::Mason::Interp::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -1027,15 +1024,9 @@ sub apply_escapes
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Interp - Mason Component Interpreter
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -1446,34 +1437,5 @@ L<allow_globals|HTML::Mason::Params/allow_globals> parameter; otherwise you'll g
 C<strict>.
 
 =back
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

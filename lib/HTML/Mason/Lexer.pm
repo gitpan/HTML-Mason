@@ -3,10 +3,7 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Lexer;
-{
-  $HTML::Mason::Lexer::VERSION = '1.54';
-}
-
+$HTML::Mason::Lexer::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -577,15 +574,9 @@ sub throw_syntax_error
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Lexer - Generates events based on component source lexing
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -659,34 +650,5 @@ you want.
 We recommend that any parameters you add to Lexer be read-only,
 because the compiler object_id is only computed once on creation
 and would not reflect any changes to Lexer parameters.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

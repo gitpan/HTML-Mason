@@ -31,10 +31,7 @@
 #
 
 package HTML::Mason::Request;
-{
-  $HTML::Mason::Request::VERSION = '1.54';
-}
-
+$HTML::Mason::Request::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -1551,10 +1548,7 @@ sub log
 }
 
 package Tie::Handle::Mason;
-{
-  $Tie::Handle::Mason::VERSION = '1.54';
-}
-
+$Tie::Handle::Mason::VERSION = '1.55';
 sub TIEHANDLE
 {
     my $class = shift;
@@ -1587,15 +1581,9 @@ sub PRINTF
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Request - Mason Request Class
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -1906,13 +1894,13 @@ defaults to C<FileCache> in most cases, or C<MemoryCache> if the
 interpreter has no data directory, and must be a backend subclass of
 C<Cache::Cache>. The prefix "Cache::" need not be included.  See the
 C<Cache::Cache> package for a full list of backend subclasses.
-
+ 
 Beyond that, I<cache_options> may include any valid options to the new() method of the
 cache class. e.g. for C<FileCache>, valid options include C<default_expires_in> and
 C<cache_depth>.
 
 See L<HTML::Mason::Cache::BaseCache|HTML::Mason::Cache::BaseCache> for
-information about the object returend from C<$m-E<gt>cache>.
+information about the object returned from C<$m-E<gt>cache>.
 
 =item If data_cache_api = CHI
 
@@ -2109,7 +2097,7 @@ Note that we ignore both the original and the final return value.
     }
     ...
 
-Here is a piece of code that traps all errors occuring anywhere in a
+Here is a piece of code that traps all errors occurring anywhere in a
 component or its children, e.g. for the purpose of handling
 application-specific exceptions. This is difficult to do with a manual
 C<eval> because it would have to span multiple code sections and the
@@ -2543,34 +2531,5 @@ exceptions, like this:
   # handle other exceptions
 
 =back
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

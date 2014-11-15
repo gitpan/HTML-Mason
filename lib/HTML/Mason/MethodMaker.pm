@@ -3,10 +3,7 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::MethodMaker;
-{
-  $HTML::Mason::MethodMaker::VERSION = '1.54';
-}
-
+$HTML::Mason::MethodMaker::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -111,17 +108,11 @@ sub import
 
 1;
 
-__END__
-
 =pod
 
 =head1 NAME
 
 HTML::Mason::MethodMaker - Used to create simple get & get/set methods in other classes
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -177,34 +168,5 @@ The value of the 'read_write_contained' parameter should be a hash
 reference.  The keys are the internal name of the contained object,
 such as "request" or "compiler".  The values for the keys are the same
 as the parameters given for 'read_write' accessors.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

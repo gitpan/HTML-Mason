@@ -3,10 +3,7 @@
 # under the same terms as Perl itself.
 
 package HTML::Mason::Resolver;
-{
-  $HTML::Mason::Resolver::VERSION = '1.54';
-}
-
+$HTML::Mason::Resolver::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -42,15 +39,9 @@ sub _virtual
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Resolver - Component path resolver base class
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -73,7 +64,7 @@ This class is used by most of the Mason object's to manage constructor
 parameters and has-a relationships with other objects.
 
 See the documentation on this class for details on how to declare what
-paremeters are valid for your subclass's constructor.
+parameters are valid for your subclass's constructor.
 
 HTML::Mason::Resolver is a subclass of Class::Container so you
 do not need to subclass it yourself.
@@ -129,34 +120,5 @@ if your resolver subclass will never be used in conjunction with
 L<HTML::Mason::ApacheHandler|HTML::Mason::ApacheHandler>.
 
 =back
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

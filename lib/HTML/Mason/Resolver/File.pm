@@ -3,10 +3,7 @@
 # it under the same terms as Perl itself.
 
 package HTML::Mason::Resolver::File;
-{
-  $HTML::Mason::Resolver::File::VERSION = '1.54';
-}
-
+$HTML::Mason::Resolver::File::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -105,15 +102,9 @@ sub apache_request_to_comp_path {
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Resolver::File - Component path resolver for file-based components
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -125,34 +116,5 @@ version 1.54
 
 This HTML::Mason::Resolver subclass is used when components are stored
 on the filesystem, which is the norm for most Mason-based applications.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

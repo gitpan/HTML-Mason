@@ -3,10 +3,7 @@
 # it under the same terms as Perl itself.
 
 package HTML::Mason::Component::FileBased;
-{
-  $HTML::Mason::Component::FileBased::VERSION = '1.54';
-}
-
+$HTML::Mason::Component::FileBased::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -55,15 +52,9 @@ sub assign_runtime_properties {
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Component::FileBased - Mason File-Based Component Class
-
-=head1 VERSION
-
-version 1.54
 
 =head1 DESCRIPTION
 
@@ -76,34 +67,5 @@ implement components which are stored in files.
 See L<the FILE-BASED METHODS section of
 HTML::Mason::Component|HTML::Mason::Component/FILE-BASED METHODS> for
 documentation.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

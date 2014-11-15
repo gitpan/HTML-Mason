@@ -3,10 +3,7 @@
 # it under the same terms as Perl itself.
 
 package HTML::Mason::Resolver::Null;
-{
-  $HTML::Mason::Resolver::Null::VERSION = '1.54';
-}
-
+$HTML::Mason::Resolver::Null::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -33,15 +30,9 @@ sub glob_path {
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Resolver::Null - a do-nothing resolver
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -59,7 +50,7 @@ of them do anything.
 This means that if you use this method things like C<< $interp->exec >>
 will simply not work at all.
 
-However, if you just want to make a component with an interepreter and
+However, if you just want to make a component with an interpreter and
 execute that component it can be useful.  For example:
 
   my $interp = HTML::Mason::Interp->new( resolver_class => 'HTML::Mason::Resolver::Null',
@@ -75,34 +66,5 @@ EOF
   $request->exec;
 
   print $buffer;
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

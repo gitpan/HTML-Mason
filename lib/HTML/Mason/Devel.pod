@@ -1,16 +1,6 @@
-
-
-__END__
-
-=pod
-
 =head1 NAME
 
 HTML::Mason::Devel - Mason Developer's Manual
-
-=head1 VERSION
-
-version 1.54
 
 =head1 DESCRIPTION
 
@@ -269,7 +259,7 @@ in strange and mysterious ways.
 =head2 Component Objects
 
 Mason provides an object API for components, allowing you to query a
-component's various asociated files, arguments, etc. For a description
+component's various associated files, arguments, etc. For a description
 of all methods see
 B<L<HTML::Mason::Component|HTML::Mason::Component>>.  Typically you
 get a handle on a component object from request methods like C<<
@@ -601,7 +591,7 @@ C<exec> method to execute it, which takes exactly the same parameters
 as the C<comp> method.
 
 Since subrequests inherit their parent request's parameters, output
-from a component called via a subrequest goes to the same desintation
+from a component called via a subrequest goes to the same destination
 as output from components called during the parent request.  Of course,
 you can change this.
 
@@ -950,7 +940,7 @@ In Mason 1.21 and beyond, this unnecessary copying was eliminated and
 @_ now contains I<aliases> to the caller's arguments, just as with
 regular Perl subroutines. For example, if a component updates $_[0],
 the corresponding argument is updated (or an error occurs if it is not
-updatable).
+updateable).
 
 Most users won't notice this change because C<< <%args> >> variables
 and the C<%ARGS> hash always contain copies of arguments.
@@ -1327,7 +1317,7 @@ Anything between these two lines
    % }
 
 will be skipped by Mason, including component calls.  While we don't
-recomend this for comments per se, it is a useful notation for
+recommend this for comments per se, it is a useful notation for
 "commenting out" code that you don't want to run.
 
 =head2 HTML/XML/... comments
@@ -2241,34 +2231,5 @@ initialize the object from %ARGS:
 Modules which work as source filters, such as C<Switch.pm>, will only
 work when you are using object files.  This is because of how source
 filters are implemented, and cannot be changed by the Mason authors.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

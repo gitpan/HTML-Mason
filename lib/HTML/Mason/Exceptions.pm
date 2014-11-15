@@ -1,11 +1,7 @@
 package HTML::Mason::Exceptions;
-
+$HTML::Mason::Exceptions::VERSION = '1.55';
 use strict;
 use warnings;
-
-use vars qw($VERSION);
-
-$VERSION = 1.43;
 
 my %e;
 
@@ -130,7 +126,7 @@ sub rethrow_exception
 }
 
 package HTML::Mason::Exception;
-
+$HTML::Mason::Exception::VERSION = '1.55';
 use HTML::Mason::MethodMaker
     ( read_write => [ qw ( format ) ] );
 
@@ -422,7 +418,7 @@ EOF
 }
 
 package HTML::Mason::Exception::Compilation;
-
+$HTML::Mason::Exception::Compilation::VERSION = '1.55';
 sub full_message
 {
     my $self = shift;
@@ -431,7 +427,7 @@ sub full_message
 }
 
 package HTML::Mason::Exception::Syntax;
-
+$HTML::Mason::Exception::Syntax::VERSION = '1.55';
 sub full_message
 {
     my $self = shift;
@@ -443,15 +439,9 @@ sub full_message
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Exceptions - Exception objects thrown by Mason
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -622,34 +612,5 @@ or
 
 Note that when specifying a subclass you should not include the
 leading "HTML::Mason::Exception::" portion of the class name.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

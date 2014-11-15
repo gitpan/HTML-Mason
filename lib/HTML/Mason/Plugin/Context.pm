@@ -1,16 +1,12 @@
 package HTML::Mason::Plugin::Context;
-{
-  $HTML::Mason::Plugin::Context::VERSION = '1.54';
-}
+$HTML::Mason::Plugin::Context::VERSION = '1.55';
 use strict;
 use warnings;
 
 #------------------------------------------------------------
 
 package HTML::Mason::Plugin::Context::StartRequest;
-{
-  $HTML::Mason::Plugin::Context::StartRequest::VERSION = '1.54';
-}
+$HTML::Mason::Plugin::Context::StartRequest::VERSION = '1.55';
 use base qw(HTML::Mason::Plugin::Context);
 
 sub request   { $_[0]->[0] }
@@ -25,9 +21,7 @@ sub args      {
 #------------------------------------------------------------
 
 package HTML::Mason::Plugin::Context::EndRequest;
-{
-  $HTML::Mason::Plugin::Context::EndRequest::VERSION = '1.54';
-}
+$HTML::Mason::Plugin::Context::EndRequest::VERSION = '1.55';
 use base qw(HTML::Mason::Plugin::Context);
 
 sub request   { $_[0]->[0] }
@@ -46,9 +40,7 @@ sub error     { $_[0]->[5] }
 #------------------------------------------------------------
 
 package HTML::Mason::Plugin::Context::StartComponent;
-{
-  $HTML::Mason::Plugin::Context::StartComponent::VERSION = '1.54';
-}
+$HTML::Mason::Plugin::Context::StartComponent::VERSION = '1.55';
 use base qw(HTML::Mason::Plugin::Context);
 
 sub request   { $_[0]->[0] }
@@ -58,9 +50,7 @@ sub args      { $_[0]->[2] }
 #------------------------------------------------------------
 
 package HTML::Mason::Plugin::Context::EndComponent;
-{
-  $HTML::Mason::Plugin::Context::EndComponent::VERSION = '1.54';
-}
+$HTML::Mason::Plugin::Context::EndComponent::VERSION = '1.55';
 use base qw(HTML::Mason::Plugin::Context);
 
 sub request   { $_[0]->[0] }
@@ -76,15 +66,9 @@ sub error     { $_[0]->[5] }
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Plugin::Context - encapsulates arguments passed to plugin methods
-
-=head1 VERSION
-
-version 1.54
 
 =head1 DESCRIPTION
 
@@ -95,34 +79,5 @@ documentation about plugins.
 For efficiency these objects have no new() method - they are created
 and blessed by hand inside HTML::Mason::Request just before they are
 used.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

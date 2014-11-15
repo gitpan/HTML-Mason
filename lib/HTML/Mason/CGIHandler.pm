@@ -1,11 +1,11 @@
 package HTML::Mason::CGIHandler;
-
+$HTML::Mason::CGIHandler::VERSION = '1.55';
 use strict;
 use warnings;
 
 use HTML::Mason;
 use HTML::Mason::Utils;
-use CGI;
+use CGI 2.46;
 use File::Spec;
 use Params::Validate qw(:all);
 use HTML::Mason::Exceptions;
@@ -16,17 +16,6 @@ use base qw(Class::Container);
 
 use HTML::Mason::MethodMaker
     ( read_write => [ qw( interp ) ] );
-
-use vars qw($VERSION);
-
-# Why do we have a version?  I'm glad you asked.  See, dummy me
-# stupidly referenced it in the Subclassing docs _and_ the book.  It's
-# needed in order to dynamically have a request subclass change its
-# parent properly to work with CGIHandler or ApacheHandler.  It
-# doesn't really matter what the version is, as long as it's a true
-# value.  - dave
-$VERSION = '1.00';
-
 
 __PACKAGE__->valid_params
     (
@@ -154,7 +143,7 @@ sub request_args {
 ###########################################################
 package HTML::Mason::Request::CGI;
 # Subclass for HTML::Mason::Request object $m
-
+$HTML::Mason::Request::CGI::VERSION = '1.55';
 use HTML::Mason::Exceptions;
 use HTML::Mason::Request;
 use base qw(HTML::Mason::Request);
@@ -191,7 +180,7 @@ sub exec
 
     if (my $err = $@)
     {
-	$retval = isa_mason_exception($err, 'Abort')   ? $err->aborted_value  :
+    $retval = isa_mason_exception($err, 'Abort')   ? $err->aborted_value  :
                   isa_mason_exception($err, 'Decline') ? $err->declined_value :
                   rethrow_exception $err;
     }
@@ -223,18 +212,11 @@ sub redirect {
 }
 
 1;
-
 __END__
-
-=pod
 
 =head1 NAME
 
 HTML::Mason::CGIHandler - Use Mason in a CGI environment
-
-=head1 VERSION
-
-version 1.54
 
 =head1 SYNOPSIS
 
@@ -603,34 +585,5 @@ Takes a single key argument and deletes that key from the table, so that none
 of its values will be in the table any longer.
 
 =back
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut

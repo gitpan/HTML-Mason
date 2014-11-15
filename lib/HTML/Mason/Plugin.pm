@@ -1,8 +1,5 @@
 package HTML::Mason::Plugin;
-{
-  $HTML::Mason::Plugin::VERSION = '1.54';
-}
-
+$HTML::Mason::Plugin::VERSION = '1.55';
 use strict;
 use warnings;
 
@@ -35,31 +32,9 @@ sub end_component_hook {
 
 __END__
 
-=pod
-
 =head1 NAME
 
 HTML::Mason::Plugin - Plugin Base class for Mason
-
-=head1 VERSION
-
-version 1.54
-
-=head1 DESCRIPTION
-
-Use a Mason plugin to have actions occur at the beginning or end of
-requests or components. Plugins are activated by passing L<plugins|HTML::Mason::Params/plugins> in
-the interpreter or request object. Each plugin in the list can be
-specified as a class name (in which case the plugin object is created
-once for each request) or as an actual object of the plugin class.
-
-If your plugin can be configured, place the configuration in class
-variables - for example,
-
-    $MasonX::Plugin::Timer::Units = 'seconds';
-
-These can be set either from httpd.conf via PerlSetVar
-directives, or in perl directly from a handler.pl file.
 
 =head1 SYNOPIS
 
@@ -80,6 +55,22 @@ directives, or in perl directly from a handler.pl file.
    }
 
    1;
+
+=head1 DESCRIPTION
+
+Use a Mason plugin to have actions occur at the beginning or end of
+requests or components. Plugins are activated by passing L<plugins|HTML::Mason::Params/plugins> in
+the interpreter or request object. Each plugin in the list can be
+specified as a class name (in which case the plugin object is created
+once for each request) or as an actual object of the plugin class.
+
+If your plugin can be configured, place the configuration in class
+variables - for example,
+
+    $MasonX::Plugin::Timer::Units = 'seconds';
+
+These can be set either from httpd.conf via PerlSetVar
+directives, or in perl directly from a handler.pl file.
 
 =head1 PLUGIN HOOKS
 
@@ -180,34 +171,5 @@ because output from multiple components combine into a single buffer.
 
 Do not keep an unweakened reference to a request or component object
 in your plugin object, or you will create a nasty circular reference.
-
-=head1 SEE ALSO
-
-L<Mason|Mason>
-
-=head1 AUTHORS
-
-=over 4
-
-=item *
-
-Jonathan Swartz <swartz@pobox.com>
-
-=item *
-
-Dave Rolsky <autarch@urth.org>
-
-=item *
-
-Ken Williams <ken@mathforum.org>
-
-=back
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2012 by Jonathan Swartz.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut
